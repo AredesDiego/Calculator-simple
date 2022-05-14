@@ -1,38 +1,65 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 int sum (int , int );
 int subtract (int ,int );
 int multiply (int , int );
 int division (int , int );
 int resta (int , int );
+
 int main (){
+
+system ("Title Calculator");
 int a,b,x;
-cout << "CHOISE YOUR DESTINY :"<< endl<< "1-SUM"<<endl<<"2-SUBTRACT"<<endl<<"3-MULTIPLY"<<endl<<"4-DIVISION"<<endl;
+string f;
+
+do {
+system ("cls");
+cout << "CHOISE YOUR DESTINY :"<< endl<< "1-SUM"<<endl<<"2-SUBTRACT"<<endl<<"3-MULTIPLY"<<endl<<"4-DIVISION"<<endl<<endl;
+cout << "THE NUMBER OF YOUR CHOISE : " ;
 cin >> x;
-cout << "PUT YOUR NUMBER : ";
+cout << "PUT YOUR FIRST NUMBER : ";
+
 switch(x){
 case 1:
-	cin >> a>>b;
-	sum (a,b);
-	cout << "THE ANSWER IS : "<< sum (a,b)<<endl;
+	system ("Title SUM");
+	cin >>a;
+	cout << "YOUR SECOND NUMBER : ";
+	cin >> b;cout <<endl;
+	cout << "THE ANSWER IS : "<< sum (a,b)<<endl<<endl;
 	break;
+	
 case 2:
-	cin >> a>>b;
-	subtract(a,b);
-	cout << "THE ANSWER IS : "<<subtract (a,b)<<endl;
+	system ("Title SUBTRACT");
+	cin >>a;
+	cout << "YOUR SECOND NUMBER : ";
+	cin >> b;cout <<endl;
+	cout << "THE ANSWER IS : "<<subtract (a,b)<<endl<<endl;
 	break;
+	
 case 3:
-	cin >> a>>b;
-	multiply (a,b);
-	cout << "THE ANSWER IS : "<<multiply (a,b)<<endl;
+	system ("Title MULTIPLY");
+	cin >> a;
+	cout << "YOUR SECOND NUMBER : ";
+	cin >>b;cout <<endl;
+	cout << "THE ANSWER IS : "<<multiply (a,b)<<endl<<endl;
 	break;
+	
 case 4:
-	cin >> a>>b;
-	division (a,b);
-	cout << "THE ANSWER IS : "<<division (a,b)<< endl;
+	system ("Title MULTIPLY");
+	cin >>a;
+	cout << "YOUR SECOND NUMBER : ";
+	cin >> b;cout <<endl;
+	cout << "THE ANSWER IS : "<<division (a,b)<< endl<<endl;
 	break;
+	
 	}
-	system("PAUSE");
+	cout << "DO YOU WANT TO GO BACK TO THE START ?"<< endl << "IF YOU WANT TO USE THE CALCULATOR AGAIN  "; 
+	cout<<"PRESS : Y"<<endl;
+	cin >> f;
+	}
+while (f == "y"|| f== "Y");
+
 }
 
 int sum (int a, int b){
