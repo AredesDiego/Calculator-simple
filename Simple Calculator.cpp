@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 using namespace std;
+
 int sum (int , int );
 int subtract (int ,int );
 int multiply (int , int );
@@ -16,10 +17,10 @@ string answer;
 
 //declare your choise
 do {
-system ("cls");
-cout << "CHOISE YOUR DESTINY :"<< endl<< "1-SUM"<<endl<<"2-SUBTRACT"<<endl<<"3-MULTIPLY"<<endl<<"4-DIVISION"<<endl<<endl;
-cout << "THE NUMBER OF YOUR CHOISE : " ;
-cin >> choise;
+	system ("cls");
+	cout << "CHOISE YOUR DESTINY :"<< endl<< "1-SUM"<<endl<<"2-SUBTRACT"<<endl<<"3-MULTIPLY"<<endl<<"4-DIVISION"<<endl<<endl;
+	cout << "THE NUMBER OF YOUR CHOISE : " ;
+	cin >> choise;
 
 // your choise
 switch(choise){
