@@ -24,6 +24,7 @@ do {
 
 // your choise
 switch(choise){
+		
 case 1:
 	do{
 	system ("Title SUM");
